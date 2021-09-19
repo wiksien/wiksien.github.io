@@ -1,3 +1,4 @@
+/* || variables */
 /* || Style reset */
 * {
   padding: 0;
@@ -7,9 +8,13 @@
 }
 
 /* || General styles */
-.background {
-  width: 100vw;
-  height: 100vh;
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(/images/pattern-background-desktop.svg) top no-repeat, #e0e8ff;
+  background-size: 100%;
 }
 
 .attribution {
