@@ -13,6 +13,12 @@ html, body {
 }
 
 body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 15fr 1fr;
+      grid-template-rows: 15fr 1fr;
   background: url(/images/pattern-background-desktop.svg) top no-repeat, #e0e8ff;
   background-size: contain;
 }
@@ -24,7 +30,19 @@ body {
   }
 }
 
+/* || Content styles */
+.container {
+  place-self: center;
+  background-color: red;
+  max-width: 30em;
+  min-height: 42em;
+  margin: 2em;
+}
+
 .attribution {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  place-self: center;
   font-size: 11px;
   text-align: center;
 }
