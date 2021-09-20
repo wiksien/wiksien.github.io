@@ -18,7 +18,11 @@ html, body
 
 body
   background: url(/images/pattern-background-desktop.svg) top no-repeat, $pale-blue
-  background-size: 100%
+  background-size: contain
+
+  @media all and (orientation: portrait)
+    background: url(/images/pattern-background-mobile.svg) top no-repeat, $pale-blue
+    background-size: contain
 
 .attribution 
   font-size: 11px 
