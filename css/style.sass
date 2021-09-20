@@ -1,8 +1,10 @@
 /* || variables */ 
 
 $pale-blue: hsl(225, 100%, 94%)
-$breakpoint-mobile: 375px
 
+$container-max-width: 30em
+$container-min-height: 42em
+$container-margin: 2em
   
 /* || Style reset */ 
 
@@ -17,6 +19,10 @@ html, body
   height: 100%
 
 body
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: 15fr 1fr
+
   background: url(/images/pattern-background-desktop.svg) top no-repeat, $pale-blue
   background-size: contain
 
@@ -24,7 +30,23 @@ body
     background: url(/images/pattern-background-mobile.svg) top no-repeat, $pale-blue
     background-size: contain
 
+
+/* || Content styles */
+
+.container
+  place-self: center
+
+  background-color: red
+
+  max-width: $container-max-width
+  min-height: $container-min-height
+
+  margin: $container-margin
+
 .attribution 
+  grid-column-start: 1
+  place-self: center
+
   font-size: 11px 
   text-align: center
 
