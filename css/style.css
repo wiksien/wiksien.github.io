@@ -1,4 +1,6 @@
 /* || variables */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 /* || Style reset */
 * {
   padding: 0;
@@ -30,15 +32,34 @@ body {
   }
 }
 
+h1, h3, a, p {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
 /* || Content styles */
 .container {
   place-self: center;
-  background-color: red;
-  max-width: 30em;
+  background-color: #f5f7ff;
+  max-width: 28em;
   min-height: 42em;
   margin: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto 2.5fr 1fr 1fr 0.5fr;
+      grid-template-rows: auto 2.5fr 1fr 1fr 0.5fr;
 }
 
+.container__text {
+  place-self: center;
+}
+
+/* Footer styling */
 .attribution {
   -ms-grid-column: 1;
       grid-column-start: 1;

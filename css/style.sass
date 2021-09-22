@@ -8,10 +8,14 @@ $dark-blue: hsl(223, 47%, 23%)
 $desaturated-blue: hsl(224, 23%, 55%)
 
 
-$container-max-width: 30em
+$container-max-width: 28em
 $container-min-height: 42em
 $container-margin: 2em
-  
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap')
+ 
 /* || Style reset */ 
 
 * 
@@ -36,18 +40,34 @@ body
     background: url(/images/pattern-background-mobile.svg) top no-repeat, $pale-blue
     background-size: contain
 
+h1, h3, a, p
+  font-family: 'Red Hat Display', sans-serif
+
+p
+  font-size: 16px
 
 /* || Content styles */
 
 .container
   place-self: center
 
-  background-color: red
+  background-color: $white-blue-container
 
   max-width: $container-max-width
   min-height: $container-min-height
 
   margin: $container-margin
+
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: auto 2.5fr 1fr 1fr 0.5fr
+
+
+.container__text
+  place-self: center
+
+
+/* Footer styling */
 
 .attribution 
   grid-column-start: 1
