@@ -32,7 +32,7 @@ body {
   }
 }
 
-h1, h3, a, p, button {
+h1, h4, a, p, button {
   font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -79,13 +79,6 @@ p {
           align-items: center;
 }
 
-.plan__box {
-  background-color: #f5f7ff;
-  width: 22em;
-  width: 80%;
-  height: 100%;
-}
-
 .order__button {
   width: 80%;
   height: 50%;
@@ -94,6 +87,45 @@ p {
   color: #FFF;
   background-color: #3829e0;
   border: 0;
+}
+
+.plan__box {
+  background-color: #f5f7ff;
+  width: 22em;
+  width: 80%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box__icon {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.box__textContainer {
+  line-height: 1.5em;
+}
+
+.box__price {
+  color: #7280a7;
+}
+
+.box__change {
+  color: #3829e0;
+  font-weight: 700;
+}
+
+.cancel__link {
+  color: #7280a7;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .text__heading {

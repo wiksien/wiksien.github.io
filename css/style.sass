@@ -43,7 +43,7 @@ body
     background-size: contain
 
 
-h1, h3, a, p, button
+h1, h4, a, p, button
   font-family: 'Red Hat Display', sans-serif
 
 p
@@ -81,12 +81,6 @@ p
   justify-content: center
   align-items: center
 
-.plan__box
-  background-color: $very-pale-blue
-  width: $elements-width
-  width: 80%
-  height: 100%
-
 .order__button
   width: 80%
   height: 50%
@@ -98,6 +92,41 @@ p
   background-color: $purple-theme
   border: 0
 
+.plan__box
+  background-color: $very-pale-blue
+  width: $elements-width
+  width: 80%
+  height: 100%
+
+  display: grid
+
+  grid-template-columns: 1fr 2fr 1fr
+  grid-auto-rows: auto
+
+  align-items: center
+
+.box__icon
+  justify-self: center
+
+.box__textContainer
+  line-height: 1.5em
+
+.box__price
+  color: $desaturated-blue
+
+.box__change
+  color: $purple-theme
+
+  font-weight: 700
+
+
+.cancel__link
+  color: $desaturated-blue
+
+  font-weight: 900
+  text-decoration: none
+
+
 .text__heading,
   margin-top: 1.3em
   margin-bottom: 0.5em
@@ -108,7 +137,6 @@ p
   color: $desaturated-blue
   line-height: 1.7em
   font-weight: 500
-  
 
 /* Footer styling */
 
