@@ -53,11 +53,13 @@ p {
       grid-template-columns: auto;
   -ms-grid-rows: auto 2fr 0.9fr 1fr 0.6fr;
       grid-template-rows: auto 2fr 0.9fr 1fr 0.6fr;
+  border-radius: 25px;
 }
 
 .image__image {
   max-width: 100%;
   height: auto;
+  border-radius: 25px 25px 0 0;
 }
 
 .container__text, .container__cancel {
@@ -79,16 +81,6 @@ p {
           align-items: center;
 }
 
-.order__button {
-  width: 80%;
-  height: 50%;
-  font-size: 1em;
-  font-weight: 700;
-  color: #FFF;
-  background-color: #3829e0;
-  border: 0;
-}
-
 .plan__box {
   background-color: #f5f7ff;
   width: 22em;
@@ -102,6 +94,18 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+}
+
+.order__button {
+  width: 80%;
+  height: 50%;
+  font-size: 1em;
+  font-weight: 700;
+  color: #FFF;
+  background-color: #3829e0;
+  border: 0;
+  border-radius: 10px;
 }
 
 .box__icon {

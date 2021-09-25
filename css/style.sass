@@ -1,18 +1,19 @@
 /* || variables */ 
 
 $pale-blue: hsl(225, 100%, 94%)
-
 $purple-theme: hsl(245, 75%, 52%)
 $very-pale-blue: hsl(225, 100%, 98%)
 $dark-blue: hsl(223, 47%, 23%)
 $desaturated-blue: hsl(224, 23%, 55%)
 $white: #FFF
 
-
 $container-max-width: 28em
 $container-min-height: 45em
 $container-margin: 2em
 $elements-width: 22em
+
+$border-radius-amount-outer: 25px
+$border-radius-amonut-inner: 10px
 
 /* Fonts */
 
@@ -50,7 +51,8 @@ p
   font-size: 16px
 
 /* || Content styles */
-
+  
+  
 .container
   place-self: center
 
@@ -65,9 +67,13 @@ p
   grid-template-columns: auto
   grid-template-rows: auto 2fr 0.9fr 1fr 0.6fr
 
+  border-radius: $border-radius-amount-outer
+
 .image__image
   max-width: 100%
   height: auto
+
+  border-radius: $border-radius-amount-outer $border-radius-amount-outer 0 0
 
 .container__text, .container__cancel
   place-self: center
@@ -81,17 +87,6 @@ p
   justify-content: center
   align-items: center
 
-.order__button
-  width: 80%
-  height: 50%
-  
-  font-size: 1em
-  font-weight: 700
-  color: $white
-
-  background-color: $purple-theme
-  border: 0
-
 .plan__box
   background-color: $very-pale-blue
   width: $elements-width
@@ -104,6 +99,21 @@ p
   grid-auto-rows: auto
 
   align-items: center
+
+  border-radius: $border-radius-amonut-inner
+
+.order__button
+  width: 80%
+  height: 50%
+  
+  font-size: 1em
+  font-weight: 700
+  color: $white
+
+  background-color: $purple-theme
+  border: 0
+
+  border-radius: $border-radius-amonut-inner
 
 .box__icon
   justify-self: center
