@@ -69,7 +69,7 @@ p
 
   border-radius: $border-radius-amount-outer
 
-  box-shadow: 0px 40px 60px -60px $desaturated-blue
+  box-shadow: 0px 40px 70px -50px $desaturated-blue
 
 .image__image
   max-width: 100%
@@ -119,6 +119,9 @@ p
 
   box-shadow: 0px 20px 10px -10px $pale-blue
 
+  &:hover
+    opacity: 70%
+
 .box__icon
   justify-self: center
 
@@ -133,12 +136,19 @@ p
 
   font-weight: 700
 
+  &:hover
+    text-decoration: none
+    opacity: 70%
+
 
 .cancel__link
   color: $desaturated-blue
 
   font-weight: 900
   text-decoration: none
+
+  &:hover
+    color: $dark-blue
 
 
 .text__heading,
@@ -163,3 +173,12 @@ p
 
 .attribution a 
   color: hsl(228, 45%, 44%)
+
+  transition: font-size 0.2s ease-in-out
+
+  &:hover
+    text-decoration: none
+
+    opacity: 80%
+
+    font-size: 105%
