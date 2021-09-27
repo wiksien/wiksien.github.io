@@ -10,7 +10,8 @@ $white: #FFF
 $container-max-width: 28em
 $container-min-height: 45em
 $container-margin: 2em
-$elements-width: 22em
+$box-items-margin: 0.5em
+$elements-width: 80%
 
 $border-radius-amount-outer: 25px
 $border-radius-amonut-inner: 10px
@@ -44,7 +45,7 @@ body
     background-size: contain
 
 
-h1, h4, a, p, button
+h1, h2, h3, h4, h5, a, p, button
   font-family: 'Red Hat Display', sans-serif
 
 p
@@ -53,7 +54,7 @@ p
 /* || Content styles */
   
   
-.container
+.purchase-container
   place-self: center
 
   background-color: $white
@@ -71,19 +72,20 @@ p
 
   box-shadow: 0px 40px 70px -50px $desaturated-blue
 
+  overflow: hidden
+
 .image__image
   max-width: 100%
   height: auto
+  
 
-  border-radius: $border-radius-amount-outer $border-radius-amount-outer 0 0
-
-.container__text, .container__cancel
+.purchase-container__text, .purchase-container__cancel
   place-self: center
   height: 100%
   width: $elements-width
   text-align: center
 
-.container__plan, .container__order
+.purchase-container__plan, .purchase-container__order
   display: flex
 
   justify-content: center
@@ -119,14 +121,18 @@ p
 
   box-shadow: 0px 20px 10px -10px $pale-blue
 
-  &:hover
+  &:active
     opacity: 70%
 
 .box__icon
   justify-self: center
 
+  margin-left: $box-items-margin
+
 .box__textContainer
   line-height: 1.5em
+
+  margin-left: $box-items-margin
 
 .box__price
   color: $desaturated-blue
@@ -136,7 +142,9 @@ p
 
   font-weight: 700
 
-  &:hover
+  margin-right: $box-items-margin
+
+  &:active
     text-decoration: none
     opacity: 70%
 
@@ -147,7 +155,7 @@ p
   font-weight: 900
   text-decoration: none
 
-  &:hover
+  &:active
     color: $dark-blue
 
 
@@ -181,4 +189,7 @@ p
 
     opacity: 80%
 
-    font-size: 105%
+    font-size: 110%
+
+  &:active
+    opacity: 100%

@@ -32,7 +32,7 @@ body {
   }
 }
 
-h1, h4, a, p, button {
+h1, h2, h3, h4, h5, a, p, button {
   font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -41,7 +41,7 @@ p {
 }
 
 /* || Content styles */
-.container {
+.purchase-container {
   place-self: center;
   background-color: #FFF;
   max-width: 28em;
@@ -56,22 +56,22 @@ p {
   border-radius: 25px;
   -webkit-box-shadow: 0px 40px 70px -50px #7280a7;
           box-shadow: 0px 40px 70px -50px #7280a7;
+  overflow: hidden;
 }
 
 .image__image {
   max-width: 100%;
   height: auto;
-  border-radius: 25px 25px 0 0;
 }
 
-.container__text, .container__cancel {
+.purchase-container__text, .purchase-container__cancel {
   place-self: center;
   height: 100%;
-  width: 22em;
+  width: 80%;
   text-align: center;
 }
 
-.container__plan, .container__order {
+.purchase-container__plan, .purchase-container__order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +85,7 @@ p {
 
 .plan__box {
   background-color: #f5f7ff;
-  width: 22em;
+  width: 80%;
   width: 80%;
   height: 100%;
   display: -ms-grid;
@@ -112,17 +112,19 @@ p {
           box-shadow: 0px 20px 10px -10px #e0e8ff;
 }
 
-.order__button:hover {
+.order__button:active {
   opacity: 70%;
 }
 
 .box__icon {
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-left: 0.5em;
 }
 
 .box__textContainer {
   line-height: 1.5em;
+  margin-left: 0.5em;
 }
 
 .box__price {
@@ -132,9 +134,10 @@ p {
 .box__change {
   color: #3829e0;
   font-weight: 700;
+  margin-right: 0.5em;
 }
 
-.box__change:hover {
+.box__change:active {
   text-decoration: none;
   opacity: 70%;
 }
@@ -145,7 +148,7 @@ p {
   text-decoration: none;
 }
 
-.cancel__link:hover {
+.cancel__link:active {
   color: #1f2f56;
 }
 
@@ -180,6 +183,10 @@ p {
 .attribution a:hover {
   text-decoration: none;
   opacity: 80%;
-  font-size: 105%;
+  font-size: 110%;
+}
+
+.attribution a:active {
+  opacity: 100%;
 }
 /*# sourceMappingURL=style.css.map */
