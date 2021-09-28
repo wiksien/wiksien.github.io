@@ -21,7 +21,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- See hover states for interactive elements
+- See active states for interactive elements
 
 ### Screenshot
 
